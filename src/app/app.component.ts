@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-jquery-plugin';
+
+  slides = [
+    {caption: 'The Piper at the Gates of Dawn'},
+    {caption: 'A Saucerful of Secrets'},
+    {caption: 'Music from the Film More'},
+    {caption: 'Ummagumma'},
+    {caption: 'Atom Heart Mother'},
+    {caption: 'Meddle'}
+  ];
 }
