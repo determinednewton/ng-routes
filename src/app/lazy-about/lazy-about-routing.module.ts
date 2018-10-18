@@ -24,7 +24,7 @@ import { AuthGuard } from '../auth.guard';
       ]
     }])
   ],
-  declarations: [
+  exports: [
     RouterModule,
   ]
 })
