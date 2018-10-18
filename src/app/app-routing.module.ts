@@ -14,8 +14,9 @@ import { AuthGuard } from './auth.guard';
       },
       {
         path: 'about',
-        loadChildren: './lazy-about/lazy-about.module#LazyAboutModule',
-        canLoad: [
+        // loadChildren: './lazy-about/lazy-about.module#LazyAboutModule',
+        loadChildren: async () => (await import('./lazy-about/lazy-about.module')).LazyAboutModule,
+canLoad: [
           AuthGuard
         ]
       },
