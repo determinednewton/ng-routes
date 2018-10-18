@@ -14,9 +14,6 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
   declarations: [
     AppComponent,
     MainComponent,
-    AboutComponent,
-    ContactUsComponent,
-    HistoryComponent,
     ForbiddenComponent
   ],
   imports: [
