@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,17 @@ import { AboutComponent } from './about/about.component';
     AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: MainComponent,
+      },
+      {
+        path: 'about',
+        component: AboutComponent,
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
