@@ -5,8 +5,9 @@
 <a routerLink="about">About</a>
 
 <router-outlet></router-outlet>
-
-<button *ngIf="!isLoggedIn()" (click)="login()">Log In</button>
-<button *ngIf="isLoggedIn()" (click)="logout()">Log Out</button>
+<div>
+  <button *ngIf="!isLoggedIn()" (click)="login()">Log In</button>
+  <button *ngIf="isLoggedIn()" (click)="logout()">Log Out</button>
+</div>
 
 <footer>Awesome Site</footer>

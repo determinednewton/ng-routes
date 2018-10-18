@@ -5,6 +5,7 @@ import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './history/history.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   imports: [
@@ -16,6 +17,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
       {
         path: 'about',
         component: AboutComponent,
+        canActivate: [
+          AuthGuard,
+        ],
         children: [
           {
             path: '',
