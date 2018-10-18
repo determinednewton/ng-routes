@@ -36,6 +36,10 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
       {
         path: 'forbidden',
         component: ForbiddenComponent,
+      },
+      {
+        path: '**',
+        component: MainComponent,
       }
     ])
   ],
