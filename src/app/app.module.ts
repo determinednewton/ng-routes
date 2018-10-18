@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HistoryComponent } from './history/history.component';
+import { ForbiddenComponent } from './forbidden/forbidden.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HistoryComponent } from './history/history.component';
     MainComponent,
     AboutComponent,
     ContactUsComponent,
-    HistoryComponent
+    HistoryComponent,
+    ForbiddenComponent
   ],
   imports: [
     BrowserModule,

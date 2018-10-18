@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './history/history.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AuthGuard } from './auth.guard';
+import { ForbiddenComponent } from './forbidden/forbidden.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,10 @@ import { AuthGuard } from './auth.guard';
             // children
           }
         ]
+      },
+      {
+        path: 'forbidden',
+        component: ForbiddenComponent,
       }
     ])
   ],
